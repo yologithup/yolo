@@ -1,0 +1,18 @@
+package pi;
+import java.util.Scanner;
+public class Pi {
+    public static double calcPi(int n){
+        double ret=0;
+        if(n==1)
+            ret=1;
+        else if(n>=2){
+            ret= calcPi(n-1) + Math.pow((-1), n-1)/(2*n-1);
+        }
+        return ret;
+    }
+    public static void main(String[] args) {
+         Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        System.out.println("Pi = "+4*calcPi(n));
+    }
+}
