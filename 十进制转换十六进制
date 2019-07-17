@@ -1,0 +1,61 @@
+
+package jinzhi;
+import java.util.Scanner;
+public class Jinzhi {
+    public static String decToHex(int n){
+    int[]arr=new int[100];
+    int i=0;
+     String s="";
+        while(n!=0){
+           arr[i]=n%16;
+            n=n/16;
+            i++;
+        }
+   for(int j=0;j<=i;j++)
+        {
+            if (arr[j]<10)
+            {
+              s+=arr[j];
+            }
+            else
+			{
+                switch(arr[j])
+				{
+                    case 10:{
+                        s+="A";  break;
+                    }   
+                    case 11:{
+                        s+="B";break;
+                    }
+                    case 12:{
+                        s+="C";break;
+                    }
+                    case 13:{
+                        s+="D";break;
+                    }
+                    case 14:{
+                        s+="E";break;
+                    }
+                    case 15:{
+                        s+="F";break;
+                    }
+                }
+            }
+		}
+        return reverse(s);
+    }
+    public static String reverse(String s){
+        int length=s.length();
+        String r="";
+        for(int i=length-1;i>=0;i--){
+            r+=s.charAt(i);
+        }
+        return r;
+    } 
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        System.out.println(decToHex(n));
+    }
+}
