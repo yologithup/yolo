@@ -1,0 +1,31 @@
+package chengjipaixu;
+
+public class Chengjipaixu {
+
+    public static void main(String[] args) {
+        //答案数组，初始化
+        char [][] answer={
+            {'a','b','a','c','c','d','e','e','a','d'},
+            {'d','b','a','b','c','a','e','e','a','d'},
+            {'e','d','d','a','c','b','e','e','a','d'},
+            {'c','b','a','e','d','c','e','e','a','d'},
+            {'a','b','d','c','c','d','e','e','a','d'},
+            {'b','b','e','c','c','d','e','e','a','d'},
+            {'b','b','a','c','c','d','e','e','a','d'},
+            {'e','b','e','c','c','d','e','e','a','d'}
+        };
+        char[] keys={'d','b','d','c','c','d','a','e','a','d'};
+        int grade[]=new int[answer.length];
+        int student[][]=new int[answer.length][2];
+        //分数计算
+        for(int i=0;i<answer.length;i++)
+        {
+            for(int j=0;j<answer[0].length;j++)
+            {
+                if(answer[i][j]==keys[j])
+                    student[i][1]++;
+            }
+            System.out.println("student"+i+"'s correct count is"+student[i][1]);
+        }
+    }
+ }
