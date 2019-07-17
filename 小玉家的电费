@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        double elect=input.nextDouble();
+        double money=0;
+        if(elect<=150){
+            money=elect*0.4463;
+        }
+        else if(elect>150&&elect<=400){
+            money=150*0.4463+(elect-150)*0.4663;
+            }
+            else 
+                money=150*0.4463+(400-150)*0.4663+(elect-400)*0.5663;
+        System.out.printf("%.1f",money);
+        }
+    }
