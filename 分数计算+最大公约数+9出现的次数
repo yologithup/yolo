@@ -1,0 +1,46 @@
+1.计算1/1-1/2+1/3-1/4+1/5 …… + 1/99 - 1/100 的值。
+package javaapplication39;
+public class JavaApplication39 {
+    public static void main(String[] args) {
+        double sum=0;
+        for(int i=1;i<=100;i++){
+           sum+=Math.pow(-1, i-1)/(double)i;
+        }
+        System.out.println(sum);
+    }
+}
+2.最大公约数--辗转相除法
+ public static int gcd(int num1,int num2){
+        if(num1<num2){
+            int temp=num1;
+            num1=num2;
+            num2=temp;
+        }
+//假设a > b,若a不能被b整除则将a的值赋为b，将b赋为余数的值
+//重复循环直到a可以整除b
+        while(num1%num2!=0){
+            int m=num1%num2;
+            num1=num2;
+            num2=m;
+        }
+        return num2;
+    }
+    
+    
+    
+3. 编写程序数一下 1到 100 的所有整数中出现多少次数字9。
+package javaapplication39;
+public class JavaApplication39 {
+    public static void main(String[] args) {
+      int count=0;
+      for(int i=1;i<=100;i++){
+          if(i%10==9){ 
+              count++;
+          }
+          if(i/10==9){
+              count++;
+          }
+      }
+      System.out.println(count);
+    }
+}
