@@ -1,0 +1,26 @@
+package bubblesort;
+import java.util.Arrays;
+public class BubbleSort {
+    public static int[] bubbleSort(int[] arr){
+        boolean ret=false;
+        do{
+            for(int i=0;i<arr.length-1;i++){
+                ret=false;
+                for(int j=0;j<arr.length-1-i;j++){
+                    if(arr[j]>arr[j+1]){
+                        int temp=arr[j];
+                        arr[j]=arr[j+1];
+                        arr[j+1]=temp;
+                        ret=true;
+                    }
+                }
+            } 
+        }while(ret);
+        return arr;
+    }
+    public static void main(String[] args) {
+        int a[]={128,15,54,79,45,16,15,17};
+        a=bubbleSort(a);
+        System.out.println(Arrays.toString(a));
+    }
+}
