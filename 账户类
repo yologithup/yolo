@@ -1,0 +1,75 @@
+
+package zhanghu.pkg9.pkg7;
+
+import java.util.Date;
+//Acount 类
+public class Account {
+    private int id;
+    private double balance;
+    private double annualInterestRate;
+    private Date dateCreated;
+    //无参构造函数--初始化对象
+    Account(){
+      id=0;
+      balance=0;
+      annualInterestRate=0;
+      dateCreated=new Date();
+    }
+    Account(int newid,double newbalance){
+        id=newid;
+        balance=newbalance;
+        dateCreated=new Date();
+    }
+    //id,balance,annualInterestRate的修改器
+    public  void setId(int newid){
+        id=newid;
+    }
+    public  void setBalance(double newbalance){
+        balance=newbalance;
+    }
+    public  void setAnnualInterestRate(double newannualInterestRate){
+      annualInterestRate=newannualInterestRate;
+    }
+        //id,balance,annualInterestRate的访问器
+    public int getId(){
+        return id;
+    }
+    public double getBalance(){
+        return balance;
+    }
+    public double getAnnualInterestRate(){
+        return annualInterestRate;
+    }
+    public Date getDateCreated(){
+       return dateCreated;
+    }
+    public  double getMonthlyInterestRate(){
+        return annualInterestRate/12;
+    }
+    public double withDraw(double amount){
+        return balance-=amount;
+    }
+    public double deposit(double amount){
+        return balance+=amount;
+    }
+}
+
+//测试类
+package zhanghu.pkg9.pkg7;
+
+public class Zhanghu97 {
+    
+      public static void main(String[]args){
+       //先使用构造方法，修改器创建定义一个对象
+       Account account=new Account(1122,20000);//创建对象
+       account.setAnnualInterestRate(4.5);
+       account.withDraw(2500);
+       account.deposit(3000);
+       //通过访问器显示对象
+       System.out.println("Account ID:"+account.getId());    
+       System.out.println("balance:"+account.getBalance());   
+       System.out.println(account.getMonthlyInterestRate());
+       System.out.println("tDateCreated:"+account.getDateCreated());    
+       
+    }
+}
