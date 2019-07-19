@@ -8,7 +8,7 @@ public class NumberGuessingGame {
         System.out.println("....................0.退出.....................");
         System.out.println("...............................................");
     }
-    public static void game(){
+     public static void game(){
         int num=(int) (Math.random() * 100);
         while(true){
             Scanner input=new Scanner(System.in);
@@ -21,17 +21,18 @@ public class NumberGuessingGame {
             }
             else{
                 System.out.println("恭喜你猜对啦!");
-                break;
+                return;
             }
         }
     }
+
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         menu();
-        System.out.print("请选择>:");
         int ret=0;
-        ret=input.nextInt();
         do{
+			System.out.print("请选择>:");
+			ret=input.nextInt();
             switch(ret){
                 case 1:
                      game();
@@ -42,6 +43,6 @@ public class NumberGuessingGame {
                 default:
                      System.out.print("请重新选择>:");
             }
-        } while(ret!=0);
+        }while(ret!=0);
     }
 }
