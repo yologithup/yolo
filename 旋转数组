@@ -1,0 +1,10 @@
+class Solution {
+    public void rotate(int[] nums, int k) {
+        int length=nums.length;
+        k=k%length;
+        int[]a=new int[length];
+        a=Arrays.copyOf(nums,length-k);
+        System.arraycopy(nums,length-k,nums,0,k);
+        System.arraycopy(a,0,nums,k,a.length);
+    }
+}
