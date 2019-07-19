@@ -1,0 +1,22 @@
+import java.util.Arrays;
+public class JavaApplication42 {
+    public static int[] test(int[] nums){
+        int j=0;
+        for(int i=0;i<nums.length;i++)
+        {
+            if(nums[i]%2==0)
+            {
+                int temp=nums[i];
+                nums[i]=nums[j];
+                nums[j]=temp;
+                j++;
+            }
+        }
+        return nums;
+    }
+    public static void main(String[] args) {
+        int[] arr={12,4,5,8,9,10};
+        test(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+}
