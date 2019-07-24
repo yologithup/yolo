@@ -1,0 +1,91 @@
+//Node类
+
+package mylinkdelist;
+public class Node {
+     //链表属性
+    public int val;
+    public Node next;//next为空，表示最后一个节点
+
+    //构造方法
+    public Node(int val) {
+        this.val = val;
+        this.next = null;
+    }
+ public static Node pushFront(int val,Node head){
+        Node insertNode=new Node(val);//insertNode为一个引用
+        insertNode.next=head;
+        head=insertNode;
+        return head;
+    }
+    //2.尾插
+    public static Node pushBack(int val,Node head){
+        Node insertNode=new Node(val);
+        if(head==null){
+            return insertNode;
+        }
+        Node last=head;
+        //保证啦引用指向最后一个节点
+        while(last.next!=null){
+            last=last.next;
+        }
+        last.next=insertNode;
+        return head;
+    }
+//删除
+        //1.头删
+        public static Node popFront(Node head){
+            if(head==null){
+                System.out.println("链表为空，不能删除！");
+            }
+            head=head.next;
+            return head;
+        }
+        public  static Node popBack(Node head){
+            if(head==null){
+                System.out.println("链表为空，不能删除！");
+            }
+            Node last=head;
+            if(last.next==null){
+                return null;
+            }
+            while(last.next.next!=null){
+                last=last.next;
+            }
+        last.next=null;
+        return head;
+    } 
+
+    public static void printList(Node head){
+        Node cur=head;
+        while(cur!=null){
+            System.out.print(cur.val+"->");
+            cur=cur.next;
+        }
+        System.out.println("null");
+    }
+}
+
+
+//测试类
+
+package mylinkdelist;
+
+public class MylinkdeList {
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+         Node head=null;
+        //head=pushFront(0,head);
+        head=Node.pushBack(4,head);
+        head=Node.pushBack(5,head);
+        head=Node.pushBack(6,head);
+        head=Node.pushFront(3,head);
+        head=Node.pushFront(2,head);
+        head=Node.pushFront(1,head);
+        Node.printList(head);
+        head=Node.popBack(head);
+        head=Node.popFront(head);
+        Node.printList(head);
+    }
+    
+}
