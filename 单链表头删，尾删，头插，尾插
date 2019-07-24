@@ -1,3 +1,5 @@
+【题目】
+     单链表头删，尾删，头插，尾插
 //Node类
 
 package mylinkdelist;
