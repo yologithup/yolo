@@ -1,0 +1,90 @@
+【题目】
+将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 
+
+示例：
+
+输入：1->2->4, 1->3->4
+输出：1->1->2->3->4->4
+  /**
+   * Definition for singly-linked list.
+   * public class ListNode {
+   *     int val;
+   *     ListNode next;
+   *     ListNode(int x) { val = x; }
+   * }
+   */
+ 方法一：
+class Solution {
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        if (l1 == null) return l2;
+        if (l2 == null) return l1;
+        ListNode result = null;
+        ListNode last = null;
+        ListNode cur1 = l1;
+        ListNode cur2 = l2;
+        
+        while (cur1 != null && cur2 != null) {
+            if(cur1.val<=cur2.val){
+                ListNode temp=cur1.next;
+                if(result==null){
+                    result=cur1;
+                }
+                else{
+                    last.next=cur1;
+                }
+                 last=cur1;
+                cur1=temp;;
+            }
+            else{
+                ListNode temp=cur2.next;
+                if(result==null){
+                    result=cur2;
+                }
+                else{
+                    last.next=cur2;
+                }
+                 last=cur2;
+                cur2=temp;
+            }
+        }
+        if(cur1!=null){
+            last.next=cur1;
+        }
+        else{
+            last.next=cur2;
+        }
+        return result;
+    }
+}
+
+
+
+
+
+
+方法二：
+class Solution {
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+       ListNode merge=new ListNode(0);
+        ListNode last=merge;
+        while(l1!=null&&l2!=null){
+            if(l1.val>l2.val){
+                last.next=l2;
+                l2=l2.next;
+            }
+            else{
+                last.next=l1;
+                l1=l1.next;
+            }
+            last=last.next;
+        }
+        if(l1==null){
+            last.next=l2;
+        }
+        if(l2==null){
+            last.next=l1;
+        }
+        return merge.next;
+    }
+}
+
