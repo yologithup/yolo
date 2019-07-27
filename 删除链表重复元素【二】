@@ -1,0 +1,56 @@
+【题目】
+给定一个排序链表，删除所有含有重复数字的节点，只保留原始链表中 没有重复出现 】】的数字。
+
+示例 1:
+
+输入: 1->2->3->3->4->4->5
+输出: 1->2->5
+示例 2:
+
+输入: 1->1->1->2->3
+输出: 2->3
+
+注意：当链表末尾元素相同，在移动front引用时需要加以讨论。
+
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if(head==null||head.next==null){
+            return head;
+        }
+        ListNode front=head.next;
+        ListNode slow=head;
+        ListNode result=new ListNode(0);
+        result.next=head;
+        ListNode pre=result;
+        while(front!=null){
+            if(slow.val==front.val){
+                while(front!=null&&slow.val==front.val){
+                    front=front.next;
+                }
+                pre.next=front;
+                slow=front;
+                if(front==null){
+                    front=front;
+                }
+                else{
+                    front=front.next;
+                }
+            }
+            else{
+                pre=pre.next;
+                slow=slow.next;
+                front=front.next;
+            }
+        }
+        return result.next;
+    }
+}
