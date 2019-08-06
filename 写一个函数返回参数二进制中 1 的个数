@@ -19,3 +19,12 @@ public static int count_one_bits(int x){
             }
             return count;
         }
+【方法三】
+public static int count_one_bits(int x){
+            int count=0;
+            while(x!=0){
+                    count++;
+		    x=x&(x-1);
+            }
+            return count;
+        }
