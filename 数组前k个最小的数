@@ -1,0 +1,21 @@
+public static int find_min_of_k(int[] arr,int k,int len){
+        int []min=new int[len];
+        min[0]=arr[0];
+        int j=0;
+        if(k>=len){
+            for(int i=0;i<len;i++){
+                if(arr[i]<min[j]){
+                    j++;
+                    min[j]=arr[i];
+                }
+            }
+            return min[j];
+        }
+            for(int i=0;i<k;i++){
+                if(arr[i]<min[j]){
+                    j++;
+                    min[j]=arr[i];
+                }
+            }
+            return min[j];
+    }
