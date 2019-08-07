@@ -95,7 +95,7 @@ public class List {
 
 
 
-//测试类
+
 package myarraylist;
 public class MyArrayList {
     public static void main(String[] args) {
