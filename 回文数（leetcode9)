@@ -1,0 +1,30 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        if(x<0){
+            return false;
+        }
+        int temp1=x;
+        int temp2=x;
+        int count=0;
+        //计算位数
+        while(temp1!=0){
+            count++;
+            temp1=temp1/10;
+        }
+
+        int sum=0;
+        int i=count-1;
+        //计算从后往前读的数是
+        while(temp2!=0){
+            sum=sum+temp2%10*(int)Math.pow(10,i);
+            i--;
+            temp2=temp2/10;
+        }
+        //判等
+        //若相等则是，不相等则不是
+        if(sum==x)
+            return true;
+        else
+            return false;
+    }
+}
