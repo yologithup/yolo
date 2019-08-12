@@ -1,0 +1,20 @@
+//求一个有序数组中两个值相加为k的数字，返回这两个数字的下标
+    public static int[] FindSubscript(int[]arr,int k){
+        int left=0;
+        int right=arr.length-1;
+        int[]ret=new int[2];
+        while(left<right){
+            if(arr[left]+arr[right]==k){
+                ret[0]=left;
+                ret[1]=right;
+                break;
+            }
+            else if(arr[left]+arr[right]<k){
+                left++;
+            }
+            else{
+                right--;
+            }
+        }
+        return ret;
+    }
