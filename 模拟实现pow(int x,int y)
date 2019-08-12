@@ -1,0 +1,32 @@
+模拟实现I pow(int x,int y)---->递归
+    public static int mypow1(int x, int y){
+        if(x==0){
+            return 0;
+        }
+        if(y==0){
+            return 1;
+        }
+        int pow=0;
+        //减少啦乘法的运算次数，重复利用啦运算结果
+        if(y%2==0){
+            pow=mypow1(x,y/2)*mypow1(x,y/2);
+        }
+        else{
+            pow=mypow1(x,y/2)*mypow1(x,y/2)*x;
+        }
+        return pow;
+    }
+  模拟实现II pow(int x,int y)----->循环
+    public static int mypow2(int x, int y){
+        if(x==0){
+            return 0;
+        }
+        if(y==0){
+            return 1;
+        }
+        int pow=1;
+        for(int i=1;i<=y;i++){
+            pow*=x;
+        }
+        return pow;
+    }
