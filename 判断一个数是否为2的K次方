@@ -1,0 +1,14 @@
+// 判断是否为2的次数 
+public static boolean isPow(int n){
+        if(n==0||n==1){
+            return true;
+        }
+        //2的次数，其结果二进制形式只存在一个1，对其相减并且按位与，若结果为0则是，否则不是
+        //eg：4--->100 & 011==0
+        if((n&(n-1))==0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
