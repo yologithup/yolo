@@ -3,26 +3,62 @@
 
 要求返回这个链表的深拷贝。 
 
-class Solution {
-    public Node copyRandomList(Node head) {
-        if(head == null){
-            return head;
-        }
-        // map方法，空间复杂度O(n)
-        Node node = head;
-        // 使用hash表存储旧结点和新结点的映射
-        Map<Node,Node> map = new HashMap<>();
-        while(node != null){
-            Node clone = new Node(node.val,null,null);
-            map.put(node,clone);
-            node = node.next;
-        }
-        node = head;
-        while(node != null){
-            map.get(node).next = map.get(node.next);
-            map.get(node).random = map.get(node.random);
-            node = node.next;
-        }
-        return map.get(head);
+/*
+// Definition for a Node.
+class Node {
+    public int val;
+    public Node next;
+    public Node random;
+
+    public Node() {}
+
+    public Node(int _val,Node _next,Node _random) {
+        val = _val;
+        next = _next;
+        random = _random;
     }
+};
+*/
+public class Solution {
+  public Node copyRandomList(Node head) {
+
+    if (head == null) {
+      return null;
+    }
+
+    Node ptr = head;
+    while (ptr != null) {
+
+      // 复制结点
+      Node newNode = new Node(ptr.val);
+
+      // Inserting the cloned node just next to the original node.
+      // If A->B->C is the original linked list,
+      // Linked list after weaving cloned nodes would be A->A'->B->B'->C->C'
+      newNode.next = ptr.next;
+      ptr.next = newNode;
+      ptr = newNode.next;
+    }
+
+    ptr = head;
+
+    //复制随机指针
+    while (ptr != null) {
+      ptr.next.random = (ptr.random != null) ? ptr.random.next : null;
+      ptr = ptr.next.next;
+    }
+
+    //复制next
+    Node ptr_old_list = head; 
+    Node ptr_new_list = head.next; 
+    Node head_old = head.next;
+    while (ptr_old_list != null) {
+      ptr_old_list.next = ptr_old_list.next.next;
+      ptr_new_list.next = (ptr_new_list.next != null) ? ptr_new_list.next.next : null;
+      ptr_old_list = ptr_old_list.next;
+      ptr_new_list = ptr_new_list.next;
+    }
+    return head_old;
+  }
 }
+
