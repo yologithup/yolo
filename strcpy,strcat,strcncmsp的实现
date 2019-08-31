@@ -1,10 +1,4 @@
-//char* strncpy(char * destination, const char * source)
 
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
-#include<Windows.h>
-#include<string.h>
-#include<assert.h>
 char* My_strncpy(char* dest, const char* source, int n)
 {
 	char* ret = dest;
@@ -15,20 +9,8 @@ char* My_strncpy(char* dest, const char* source, int n)
 	}
 	return ret;
 }
-int main()
-{
-	char str1[20] = "abcdefg";
-	char* str2 = "hijklmn";
-	printf("%s", My_strncpy(str1, str2, 3));
-	system("pause");
-	return 0;
-}
 
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
-#include<Windows.h>
-#include<string.h>
-#include<assert.h>
+
 char* My_strncat(char* dest, const char* source, int n)
 {
 	char* ret = dest;
@@ -43,20 +25,7 @@ char* My_strncat(char* dest, const char* source, int n)
 	}
 	return ret;
 }
-int main()
-{
-	char str1[20] = "abcdefg";
-	char* str2 = "hijklmn";
-	printf("%s", My_strncat(str1, str2, 3));
-	system("pause");
-	return 0;
-}
 
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
-#include<Windows.h>
-#include<string.h>
-#include<assert.h>
 int My_strncmsp(const char* str1, const char* str2, int n)
 {
   int ret = 0;
@@ -74,15 +43,4 @@ int My_strncmsp(const char* str1, const char* str2, int n)
 		return 0;
 
 }
-int main()
-{
-	int ret = 0;
-	char* str1 = "abcdefg";
-	char* str2 = "abcdcfg";
-	ret = My_strncmp(str1, str2, 5);
-	printf("%d\n", ret);
-	ret = My_strncmp(str1, str2, 4);
-	printf("%d\n", ret);
-	system("pause");
-	return 0;
-}
+
