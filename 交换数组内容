@@ -1,4 +1,4 @@
-Java语言：
+Java语言：交换对象的引用
 package arrayexchange;
 import java.util.Arrays;
 public class ArrayExchange {
@@ -16,7 +16,7 @@ public class ArrayExchange {
 }
 
 
-C语言：
+C语言：利用循环交换数组内容
 #include<stdio.h>
 #include<stdlib.h>
 int main()
