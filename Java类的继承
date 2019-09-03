@@ -1,0 +1,36 @@
+public class List {
+    protected int size=0;
+    public void insert(int index,int element){
+        System.out.println("");
+    }
+    public void pushFront(int index,int element){
+        System.out.println("");
+    }
+}
+
+
+
+import sun.plugin.javascript.navig.Array;
+
+import java.util.Arrays;
+
+public class ArrayList extends List{
+    private int[]array=new int[10];
+
+    @Override
+    public void insert(int index, int element) {
+        for(int i=size;i>index;i--){
+            array[i]=array[i-1];
+        }
+        array[index]=element;
+        size++;
+        System.out.println(Arrays.toString(array));
+    }
+
+    public static void main(String[] args) {
+        ArrayList arrayList=new ArrayList();
+        arrayList.insert(1,1);
+        arrayList.insert(2,2);
+        arrayList.insert(3,3);
+    }
+}
