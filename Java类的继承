@@ -1,10 +1,18 @@
+//线性表
 public class List {
     protected int size=0;
+    //插入操作
+    //留着接口，不同结构有不同的实现方法，在这先不实现
     public void insert(int index,int element){
-        System.out.println("");
+        System.out.println("暂时你给予实现");
     }
-    public void pushFront(int index,int element){
-        System.out.println("");
+    //头插
+    public void pushFront(int element){
+        insert(0,element);
+    }
+    //尾插
+    public void pushBack(int element){
+        insert(size,element);
     }
 }
 
@@ -12,12 +20,15 @@ public class List {
 
 import sun.plugin.javascript.navig.Array;
 
-import java.util.Arrays;
-
+        import java.util.Arrays;
+//顺序表，一般以数组形式存储
 public class ArrayList extends List{
     private int[]array=new int[10];
 
+
     @Override
+    //插入操作,因继承啦List类，此处只需要进行对插入方法的重载
+    //顺序表，一般以数组形式存储，所以采用数组插入元素的方法
     public void insert(int index, int element) {
         for(int i=size;i>index;i--){
             array[i]=array[i-1];
@@ -27,10 +38,59 @@ public class ArrayList extends List{
         System.out.println(Arrays.toString(array));
     }
 
+
     public static void main(String[] args) {
         ArrayList arrayList=new ArrayList();
-        arrayList.insert(1,1);
-        arrayList.insert(2,2);
-        arrayList.insert(3,3);
+        arrayList.pushBack(1);
+        arrayList.pushBack(2);
+        arrayList.pushBack(3);
+        arrayList.pushFront(10);
+        arrayList.pushFront(20);
+        arrayList.pushFront(30);
+        arrayList.insert(3,100);
     }
 }
+
+//链表
+class Node{
+    int val;
+    Node next=null;
+    public Node(int val){
+        this.val=val;
+    }
+
+}
+
+
+public class LinkList extends List{
+    private Node first=null;
+
+    @Override
+    public void insert(int index, int element) {
+        Node node=new Node(element);
+        if(index==0){
+            node.next=first;
+            first=node;
+        }
+        else if(index==size){
+            Node last=first;
+            while(last.next!=null){
+                last=last.next;
+            }
+            last.next=node;
+        }
+        else{
+            Node prev=first;
+            for(int i=0;i<index-1;i++){
+                prev=prev.next;
+            }
+            node.next=prev.next;
+        }
+        size++;
+        //输出打印
+
+
+    }
+}
+
+
