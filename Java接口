@@ -1,3 +1,7 @@
+import java.sql.SQLOutput;
+import java.util.Arrays;
+import java.util.LinkedList;
+
 //接口
 public interface List {
     void pushBack(int element);
@@ -30,6 +34,7 @@ class ArrayList extends AbstractList implements List{
         }
         array[index]=element;
         size++;
+        System.out.println(Arrays.toString(Arrays.copyOfRange(array,0,size)));
     }
 }
 
@@ -41,12 +46,59 @@ class Node{
     }
 }
 class LinkList extends AbstractList implements List{
-
+    Node head=null;
     @Override
     public void insert(int index, int element) {
         Node node=new Node(element);
-        for(int i=0;i<index;i++){
-            
+        if(index==0){
+            node.next=head;
+            head=node;
         }
+        else if(index==size){
+            Node last=head;
+            while (last.next!=null){
+                last=last.next;
+            }
+            last.next=node;
+        }
+        else{
+            Node prev=head;
+            for(int i=0;i<index-1;i++){
+                prev=prev.next;
+            }
+            Node temp=prev.next;
+            prev.next=node;
+            node.next=temp;
+        }
+        size++;
+        //打印链表，将链表中的值复制到数组中
+        int temp[]=new int[size];
+        Node cur=head;
+        int i=0;
+        while(cur!=null){
+            temp[i]=cur.val;
+            i++;
+            cur=cur.next;
+        }
+        System.out.println(Arrays.toString(temp));
+    }
+
+    public static void main(String[] args) {
+        LinkList list = new LinkList();
+        list.pushBack(1);
+        list.pushBack(2);
+        list.pushBack(3);
+        list.pushFront(10);
+        list.pushFront(20);
+        list.pushFront(30);
+        list.insert(3, 100);
+        ArrayList list1=new ArrayList();
+        list1.pushBack(1);
+        list1.pushBack(2);
+        list1.pushBack(3);
+        list1.pushFront(30);
+        list1.pushFront(20);
+        list1.pushFront(10);
+        list1.insert(3,100);
     }
 }
