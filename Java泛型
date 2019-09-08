@@ -1,0 +1,35 @@
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+//自定义容器
+class MyCollection<E>{
+    //容器大小暂时为5
+    Object[]objs=new Object[5];
+    //给容器里存元素
+    public void set(int index,Object obj){
+        objs[index]=obj;
+    }
+    //从容器中取元素
+    public E get(int index){
+        return (E)objs[index];
+    }
+}
+
+
+//测试泛型
+public class TestGeneric {
+    public static void main(String[] args) {
+        MyCollection<String> mc=new MyCollection<>();
+        mc.set(0,"1");
+        mc.set(1,"郭小天");
+//        String a=mc.get(0);
+//        String b=mc.get(1);
+//        System.out.println(a);
+//        System.out.println(b);
+        //导入List
+        List list;//在这设置了编译器自动导入
+        Map map=new HashMap();
+        
+    }
+}
