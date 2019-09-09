@@ -1,0 +1,18 @@
+public class MyArrayList {
+    private Object[] elementDate;
+    private int size=0;
+    private static final int DEFALY_CAPACITY=10;
+    public MyArrayList(){
+        elementDate=new Object[DEFALY_CAPACITY];
+    }
+    public MyArrayList(int capacity){
+        elementDate=new Object[capacity];
+    }
+    public void add(Object obj){
+        elementDate[size++]=obj;
+    }
+    //重写toString方法
+    public String toString(){
+        return "null";
+    }
+}
