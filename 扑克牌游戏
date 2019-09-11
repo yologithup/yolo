@@ -1,46 +1,19 @@
 public class Card {
-    public int value;
-    public String color;
+    public int rank;//牌面值
+    public String suit;//花色
 
-    public Card(int value, String color) {
-        this.value = value;
-        this.color = color;
+    public Card(int rank,String suit) {
+        this.rank=rank;
+        this.suit=suit;
     }
 
     @Override
     public String toString() {
-        String v;
-        if (value == 1) {
-            v = "A";
-        } else {
-            v = String.valueOf(value);
-        }
-        return String.format("[%s %s]", color, v);
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        // this 是 o 是否语义相等
-        if (obj == null) {
-            return false;
-        }
-
-        if (!(obj instanceof Card)) {
-            return false;
-        }
-
-        if (obj == this) {
-            return true;
-        }
-
-        // this.value == obj.value;
-        // 需要向下转型
-        Card o = (Card)obj;
-
-        return value == o.value
-                && color.equals(o.color);
+        return String.format("[%s,%d]",suit,rank);
     }
 }
+
+
 
 
 
@@ -48,94 +21,71 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * 时间：9.11
+ * 扑克牌游戏
+ * 步骤：
+ *      （1）生成扑克牌----买牌
+ *      （2）洗牌----利用随机数进行洗牌
+ *      （3）抽牌
+ */
 public class CardGame {
-    private static final String[] COLORS = {
-            "♠", "♥", "♦", "♣"
-    };
+    //定义花色
+    private static final String SUITS[]={"♠","♥","♦","♣"};
 
-    private static List<Card> buyDeck() {
-        List<Card> deck = new ArrayList<>(52);
-        for (int i = 0; i < 4; i++) {
-            String color = COLORS[i];
-            for (int j = 1; j <= 13; j++) {
-                int value = j;
-
-                Card card = new Card(value, color);
+    //（1）生成扑克牌----买牌
+    private static List<Card> buyCard(){
+        //用顺序表存牌
+        List<Card> deck=new ArrayList<>();
+        //生成牌
+        for(int i=0;i<4;i++){
+            for(int j=1;j<=13;j++){
+                Card card=new Card(j,SUITS[i]);
                 deck.add(card);
             }
         }
-
         return deck;
     }
 
-    private static void shuffle(List<Card> deck) {
-        Random random = new Random(20190910);
-        for (int i = deck.size() - 1; i > 0; i--) {
-            int r = random.nextInt(i);
-            swap(deck, i, r);
+    private static void swap(List<Card> deck,int i,int j){
+        Card temp=deck.get(i);
+        deck.set(i,deck.get(j));
+        deck.set(j,temp);
+    }
+
+    //(2)洗牌
+    private static void shuffle(List<Card> deck){
+        Random random=new Random(20190911);
+        for(int i=deck.size()-1;i>0;i--){
+            int r=random.nextInt(i);
+            swap(deck,i,r);
         }
     }
-
-    private static void swap(List<Card> deck, int i, int j) {
-        Card t = deck.get(i);
-        deck.set(i, deck.get(j));
-        deck.set(j, t);
-    }
-
-    private static void swap(Card[] deck, int i, int j) {
-        Card t = deck[i];
-        deck[i] = deck[j];
-        deck[j] = t;
-    }
-
-    public static void main(String[] args) {
-        List<Card> deck = buyDeck();
-        System.out.println(deck);
-        shuffle(deck);
-        System.out.println(deck);
-        List<List<Card>> hands = new ArrayList<>();
-        send(hands, deck, 3, 5);
-        System.out.println(hands.get(0));
-        System.out.println(hands.get(1));
-        System.out.println(hands.get(2));
-        System.out.println(deck);
-
-        play(hands);
-    }
-
-    private static void play(List<List<Card>> hands) {
-        Card card = new Card(1, "♠");
-        for (int i = 0; i < hands.size(); i++) {
-            if (hands.get(i).contains(card)) {
-                System.out.println("%d 输了");
-                return;
-            }
-
-            /*
-            for (int j = 0; j < hands.get(i).size(); j++) {
-                // 错误的
-                Card handCard = hands.get(i).get(j);
-                if (card.equals(handCard)) {
-                    System.out.println("%d 输了");
-                    return;
-                }
-            }
-             */
-        }
-    }
-
-    private static void send(List<List<Card>> hands, List<Card> deck, int numPerson, int numCard) {
-        // 调用 get 之前一定要保证元素是存在的
-        for (int k = 0; k < numPerson; k++) {
+    private static void send(List<List<Card>> hands,List<Card>deck,int numPreson,int numCard){
+        for(int i=0;i<numPreson;i++){
             hands.add(new ArrayList<>());
         }
-
-        for (int i = 0; i < numCard; i++) {
-            for (int j = 0; j < numPerson; j++) {
-                // 抓牌
-                Card card = deck.remove(0);
+        for(int i=0;i<numCard;i++){
+            for(int j=0;j<numPreson;j++){
+                Card card=deck.remove(0);
                 hands.get(j).add(card);
             }
         }
     }
+    //主函数里进行抽牌
+    //
+    public static void main(String[] args) {
+        List<Card> deck=buyCard();
+        System.out.println(deck);
+        shuffle(deck);
+        List<List<Card>> hands=new ArrayList<>();
+        send(hands,deck,4,6);
+        System.out.println(hands.get(0));
+        System.out.println(hands.get(1));
+        System.out.println(hands.get(2));
+        System.out.println(hands.get(3));
+    }
+
+    
+
 }
