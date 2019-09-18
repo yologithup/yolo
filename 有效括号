@@ -1,5 +1,4 @@
-class Solution {
-   public boolean isValid(String s) {
+public boolean isValid(String s) {
         Stack<Character>stack=new Stack<>();
         for(char c:s.toCharArray()){
             switch (c){
@@ -15,7 +14,9 @@ class Solution {
                         return false;
                     }
                     char left=stack.pop();
-                    if(!(left=='('&&c==')') ||(left=='['&&c==']')||(left=='{'&&c=='}')){
+                    if(!((left=='('&&c==')')
+                            ||(left=='['&&c==']')
+                            ||(left=='{'&&c=='}'))){
                         return false;
                     }
                 }
@@ -26,4 +27,3 @@ class Solution {
         }
         return true;
     }
-}
