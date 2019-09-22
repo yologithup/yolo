@@ -1,0 +1,67 @@
+import java.util.Arrays;
+
+/**
+ * 1.判断index是否为叶子结点
+ *      （1）left=2*parent+1;
+ *      （2）若下标left小于数组长度，存在左孩子，否则不存在左孩子
+ * 2.判断是否存在右孩子
+ *      （1）right=2*parent+2=left+1;
+ *      （2）若下标小于数组长度，存在右孩子，否则不存在右孩子
+ * 3.在左右孩子里找最小的孩子，并于index进行比较，若最小的孩子小于index则交换,否则退出
+ * 4.重置index,index=min,继续上述操作
+ */
+public class Test {
+    public static void swap(int[]arr,int i,int j){
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+    //小堆
+  public static void shiftDown(int[]array,int index,int size){
+
+        int left=2*index+1;
+        while(left<size){
+            int right=left+1;
+            int min=left;
+            if(right<size){
+                if(array[left]>array[right]){
+                    min=right;
+                }
+            }
+            if(array[index]<array[min]){
+                break;
+            }
+            swap(array,index,min);
+            index=min;
+            left=2*index+1;
+        }
+    }
+    //大堆
+    public static void shiftDown2(int[]array,int index,int size){
+        int left=index*2+1;
+        while (left<size){
+            int max=left;
+            int right=left+1;
+            if (left < size) {
+                if(array[right]>array[left]){
+                    max=right;
+                }
+            }
+            if(array[index]>array[max]){
+               break;
+            }
+            swap(array,index,max);
+            index=max;
+            left=max*2+1;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[]small={39,15,3,18,40,5,6,51,52,70};
+        int[]big={100,50,80,25,40,70,70,10,5,20,30,60,30,60,70,5};
+        shiftDown(small,0,small.length);
+        System.out.println(Arrays.toString(small));
+        shiftDown2(big,0,big.length);
+        System.out.println(Arrays.toString(big));
+    }
+}
