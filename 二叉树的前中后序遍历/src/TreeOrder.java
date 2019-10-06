@@ -110,7 +110,6 @@ public class TreeOrder {
          * 左子树的右子树的前序遍历
          * 右子树的后序遍历
          * 打印根节点
-         * @param root
          */
         public static void postOrder1(Node root){
             if(root==null){
@@ -177,7 +176,6 @@ public class TreeOrder {
          * 计算叶子结点的个数
          * 1.遍历：
          * 2.汇总：
-         * @return
          */
         //遍历：
         public static void getCount1(Node root){
