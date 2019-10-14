@@ -22,10 +22,10 @@ import java.util.Map;
  *          返回值V
  *                 删除时，key存在，返回被删除的值
  *                 删除时，key存在，返回null
- *         &#8195;3.K getKey()              返回 entry 中的 key
- *  &#8195;&#8194;返回值V
- *  &#8195;&#8195;key存在，返回value
- *  &#8195;&#8195;key不存在，返回null
+ *      3.K getKey()              返回 entry 中的 key
+ *          返回值V
+ *              key存在，返回value
+ *              key不存在，返回null
  *      4.boolean containsKey(Object key)             判断是否包含 key
  *          返回值：boolean
  *              包含返回true
@@ -106,7 +106,5 @@ public class Demo01Map {
         System.out.println("v2"+v2);//v2null
         System.out.println(map);//{赵丽颖=168, 杨颖=165}
     }
-    /*
 
-     */
 }
