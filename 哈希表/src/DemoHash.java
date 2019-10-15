@@ -1,3 +1,8 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
 /**
  * @author yolo
  * @date 2019/10/13-11:49
@@ -47,11 +52,12 @@ public class DemoHash {
         }
     }
     private SetNode[]arr;
+    private MapNode[]array;
     private int size;//当前数据个数
     //纯key
     public boolean add(int key){
         SetNode node=new SetNode(key);
-        int index=key/arr.length;
+        int index=key%arr.length;
         SetNode head=arr[index];
         if(head==null){
             head=node;
@@ -74,4 +80,21 @@ public class DemoHash {
         }
         return true;
     }
+    //HashMap
+    public int get(int key){
+        int index=key%arr.length;
+        MapNode head=array[index];
+        if(head==null){
+            return -1;
+        }
+        MapNode cur;
+        for(cur=head;cur!=null;cur=cur.next){
+            if(key==cur.key){
+                return cur.val;
+            }
+        }
+        return -1;
+    }
+
+
 }
