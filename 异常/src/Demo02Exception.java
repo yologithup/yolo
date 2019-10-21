@@ -26,7 +26,7 @@ public class Demo02Exception {
         if(obj==null){
             throw new  NullPointerException("传递的参数为空");
         } */
-        Objects.requireNonNull(obj);//不要需要自己再写判空语句
+        //Objects.requireNonNull(obj);//不要需要自己再写判空语句
         Objects.requireNonNull(obj,"传递的参数为空");
 
     }
