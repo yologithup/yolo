@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<title>个人简历</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap 1.引导程序-->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet 2.样式表
+    ==================================================-->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="intro-text">
+          <h2>郭小天</h2>
+          <hr>
+          <p> 爱技术 • 爱挑战 • 更爱美</p>
+          <a href="#about" class="btn btn-default btn-lg page-scroll">了解更多快点这！</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Navigation -->
+<div id="nav">
+  <nav class="navbar navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden"> <a href="#page-top"></a> </li>
+          <li> <a class="page-scroll" href="#about">关于我</a> </li>
+          <li> <a class="page-scroll" href="#portfolio">日常学习</a> </li>
+          <li> <a class="page-scroll" href="#contact">给我发邮件</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>关于我</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="about-text">
+        	<h3>个人信息</h3>
+          <p>姓名：郭天&nbsp;&nbsp;&nbsp; &nbsp;年龄：21</p>
+          <h3>专业学历</h3>
+          <p>专业：软件工程&nbsp;&nbsp;&nbsp; &nbsp;学历：大学本科&nbsp;&nbsp;&nbsp; &nbsp;学校;西安工程大学</p>
+          <h3>联系方式</h3>
+          <p>QQ:2471379593&nbsp;&nbsp;&nbsp; &nbsp;邮箱：18821769219@163.com</p>
+          <a href="#portfolio" class="btn btn-default btn-lg page-scroll">日常学习</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="social">
+        <ul>
+          <li><a href="https://github.com/yolotianer"target="_blank">GitHub</a></li>
+          <li><a href="http://www.w3school.com.cn"target="_blank">博客</a></li>
+        </ul>
+      </div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>日常学习</h2>
+      <hr>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">所有</a></li>
+            <li><a href="#" data-filter=".graphic">博客</a></li>
+            <li><a href="#" data-filter=".illustration">Github</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-3 col-lg-3 graphic">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="博客收藏夹" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="博客收藏夹"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 illustration">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="github主页" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="github主页"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 graphic">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="博客编辑区" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="博客编辑区"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 graphic">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="自写博客" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="img/portfolio/04-small.jpg" class="img-responsive" alt=" 自写博客"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 illustration">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="GitHub仓库" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="GitHub仓库"> </a> </div>
+          </div>
+        </div>
+       <div class="col-sm-6 col-md-3 col-lg-3 illustration">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="GitHub提交区" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="GitHub提交区"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 illustration">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="GitHub提交区" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="GitHub提交区"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 graphic">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="博客主页" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="博客主页"> </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>给我发邮件</h2>
+      <hr>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <form name="sentMessage" id="contactForm" novalidate>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="姓名" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" placeholder="邮箱" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="内容" required></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-default btn-lg">确认发送</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
