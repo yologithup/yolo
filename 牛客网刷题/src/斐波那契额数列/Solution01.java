@@ -8,7 +8,7 @@ package 斐波那契额数列;
  * n<=39
  */
 public class Solution01 {
-    public int Fibonacci(int n) {
+    public int Fibonacci1(int n) {
         if(n==0){
             return 0;
         }
@@ -21,5 +21,15 @@ public class Solution01 {
             b=c;
         }
         return c;
+    }
+    public int Fibonacci2(int n) {
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1 || n == 2) {
+            return 1;
+        } else {
+            return Fibonacci2(n - 2) + Fibonacci2(n - 1);
+        }
     }
 }
