@@ -5,4 +5,9 @@ package 链表;
  * @date 2019/10/28-21:07
  */
 public class ListNode {
+    int val;
+    ListNode next = null;
+    ListNode(int val) {
+        this.val = val;
+    }
 }
