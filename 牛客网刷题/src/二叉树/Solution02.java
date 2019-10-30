@@ -1,26 +1,21 @@
 package 二叉树;
 
+import com.sun.org.apache.regexp.internal.RE;
+
 /**
  * @author yolo
  * @date 2019/10/28-21:43
- * 输入两棵二叉树A，B，判断B是不是A的子结构。（ps：我们约定空树不是任意一个树的子结构）
+ * 操作给定的二叉树，将其变换为源二叉树的镜像。
  */
 public class Solution02 {
-    public boolean HasSubtree(TreeNode root1,TreeNode root2) {
-        if(root1==null||root2==null){
-            return false;
+    public void Mirror(TreeNode root) {
+        if(root==null){
+            return;
         }
-        return isSameTree(root1,root2)||HasSubtree(root1.left,root2)||HasSubtree(root1.right,root2);
+        TreeNode temp=root.left;
+        root.left=root.right;
+        root.right=temp;
+        Mirror(root.left);
+        Mirror(root.right);
     }
-    public boolean isSameTree(TreeNode root1,TreeNode root2) {
-        if(root1==null&&root2==null){
-            return true;
-        }
-        if(root1==null||root2==null){
-            return false;
-        }
-
-        return root1.val==root2.val&&isSameTree(root1.left,root2.left)&&isSameTree(root1.right,root2.right);
-    }
-
 }
