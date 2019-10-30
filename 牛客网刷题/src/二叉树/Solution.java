@@ -21,16 +21,6 @@ import java.util.Arrays;
  *      此时需要用第一步得到的根结点连接它们；
  * 递归调用的终止条件：直到传入数组为空，说明已经没有节点，直接返回null。
  */
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}
 public class Solution {
     public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
         if(pre.length==0||in.length==0){
