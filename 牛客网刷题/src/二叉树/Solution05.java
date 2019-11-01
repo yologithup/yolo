@@ -1,7 +1,5 @@
 package 二叉树;
 
-import javax.crypto.AEADBadTagException;
-
 /**
  * @author yolo
  * @date 2019/11/1-21:47
@@ -13,10 +11,23 @@ public class Solution05 {
         if(sequence==null||sequence.length==0){
             return false;
         }
-        int root=sequence[sequence.length-1];
-        int index=0;
-        while(sequence[index]<root){
+        return isTree(0,sequence.length-1,sequence);
+    }
+
+    private boolean isTree(int star, int end, int[] sequence) {
+        if(star>=end){
+            return true;
+        }
+        int root=sequence[end];
+        int index=star;
+        while(index<end&&sequence[index]<root){
             index++;
         }
+        for(int i=index;i<end;i++){
+            if(sequence[i]<root){
+                return false;
+            }
+        }
+        return isTree(star,index-1,sequence)&&isTree(index,end-1,sequence);
     }
 }
