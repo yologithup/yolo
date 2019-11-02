@@ -26,13 +26,28 @@ import java.util.zip.DeflaterOutputStream;
  *      开辟一条通向CPU的新路径，用来执行ｒｕｎ方法
  *  对于cup而言，就有啦两条执行路径，CPU有啦选择权，CPU喜欢谁，就选择那条路径，我们控制不了CPU，所以就有啦随机值
  *  两个线程一个main线程，一个新的线程一起抢夺CPU的执行权（执行时间），谁抢到啦谁就执行对应的代码
+ *
+ *  Thread.sleep(int s);进程会暂停多少毫秒
  */
 public class Demo01PrimeThread {
-    public static void main(String[] args) {
-        MyThread mt=new MyThread();
-        mt.start();
-        for (int i = 0; i <20 ; i++) {
-            System.out.println("main" + i);
+//    private static void method2() {
+//        Thread thread = new MyThread();
+//        thread.start();
+//    }
+
+    public static void main(String[] args) throws InterruptedException {
+        method1();
+        while (true) {
+            System.out.println("我在 main 中打印");
+            // 进程会暂停运行 1 秒
+            Thread.sleep(1000);
+        }
+    }
+    private static void method1() throws InterruptedException {
+        while (true) {
+            System.out.println("我在 method1 中打印");
+            // 进程会暂停运行 1 秒
+            Thread.sleep(1000);
         }
     }
 }
