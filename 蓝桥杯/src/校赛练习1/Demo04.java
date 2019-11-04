@@ -27,18 +27,18 @@ public class Demo04 {
         int groups = input.nextInt();
         double[] result=new double[groups];
         int h,m,s,t;
-        for (int i = 0; i <groups ; i++) {
+        for (int i = 0; i <groups ; i++) {//控制可以输入的组数
             h=input.nextInt();
             m=input.nextInt();
             s=input.nextInt();
             t=input.nextInt();
-            m+=(s+t)/60;
-            s=(s+t)%60;
-            h+=m/60;
-            h=h%12;
-            m=m%60;
-            double angle=Math.abs((h*30+(30.0/60)*m)-m*6);
-            if(angle>180){
+            m+=(s+t)/60;//先求出临时的分钟
+            s=(s+t)%60;//最终秒数
+            h+=m/60;//临时小时
+            h=h%12;//最终小时
+            m=m%60;//最终分钟
+            double angle=Math.abs((h*30+(30.0/60)*m)-m*6);//时钟与分钟夹角
+            if(angle>180){//判断是否大于180度
                 angle=360-angle;
             }
            result[i]=angle;
