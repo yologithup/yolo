@@ -29,38 +29,29 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Main01" value="1" />
-          <entry key="java" value="21" />
+          <entry key="java" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="21" />
+          <entry key="JAVA" value="22" />
           <entry key="UML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4081" />
+          <entry key="java" value="4278" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4081" />
+          <entry key="JAVA" value="4278" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/排序/Main01.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/生活中的算法/Main02.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -125,14 +116,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/数学问题/Main01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="104">
+              <caret line="13" column="30" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="13" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/数学问题/Main02.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -183,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/数组/Main02.java" />
         <option value="$PROJECT_DIR$/src/生活中的算法/Main04.java" />
         <option value="$PROJECT_DIR$/src/数学问题/Main01.java" />
+        <option value="$PROJECT_DIR$/src/数学问题/Main02.java" />
       </list>
     </option>
   </component>
@@ -193,10 +191,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="615" />
-    <option name="y" value="20" />
-    <option name="width" value="1255" />
-    <option name="height" value="970" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -240,7 +237,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573642930990" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573645633783" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
@@ -257,7 +254,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main01">
+  <component name="RunManager" selected="Application.Main02 (1)">
     <configuration name="Demo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="数组.Demo02" />
       <module name="每日一题" />
@@ -284,12 +281,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="数组.Main02" />
+    <configuration name="Main02 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="数学问题.Main02" />
       <module name="每日一题" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="数组.*" />
+          <option name="PATTERN" value="数学问题.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -297,12 +294,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main03 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="生活中的算法.Main03" />
+    <configuration name="Main02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="数组.Main02" />
       <module name="每日一题" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="生活中的算法.*" />
+          <option name="PATTERN" value="数组.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -324,19 +321,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main03 (1)" />
       <item itemvalue="Application.Demo02" />
       <item itemvalue="Application.Main02" />
       <item itemvalue="Application.Main04 (1)" />
       <item itemvalue="Application.Main01" />
+      <item itemvalue="Application.Main02 (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main02 (1)" />
         <item itemvalue="Application.Main01" />
         <item itemvalue="Application.Main04 (1)" />
         <item itemvalue="Application.Main02" />
         <item itemvalue="Application.Demo02" />
-        <item itemvalue="Application.Main03 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -358,12 +355,12 @@
       <workItem from="1573307531722" duration="6366000" />
       <workItem from="1573391162938" duration="18201000" />
       <workItem from="1573542022810" duration="831000" />
-      <workItem from="1573642457911" duration="459000" />
+      <workItem from="1573642457911" duration="1592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41057000" />
+    <option name="totallyTimeSpent" value="42190000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -375,7 +372,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="492" y="16" width="1004" height="776" extended-state="0" />
+    <frame x="762" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49586776" weight="0.24207188" />
@@ -387,7 +384,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2496124" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23032904" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -586,11 +583,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/数学问题/Main01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="104">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数学问题/Main02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
         </state>
       </provider>
     </entry>
