@@ -96,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/字符串/Main05.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="180">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -168,52 +168,15 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="每日一题" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每日一题" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="每日一题" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每日一题" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="每日一题" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每日一题" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="字符串" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="每日一题" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每日一题" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="排序" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="每日一题" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每日一题" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="数学问题" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573823856169" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573824176349" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -332,12 +295,12 @@
       <workItem from="1573711301867" duration="2555000" />
       <workItem from="1573726279652" duration="681000" />
       <workItem from="1573820279789" duration="2667000" />
-      <workItem from="1573823093816" duration="761000" />
+      <workItem from="1573823093816" duration="1080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56458000" />
+    <option name="totallyTimeSpent" value="56777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -620,8 +583,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/字符串/Main05.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
