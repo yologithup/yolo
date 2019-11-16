@@ -37,23 +37,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Main01" value="1" />
-          <entry key="java" value="34" />
+          <entry key="java" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="34" />
+          <entry key="JAVA" value="35" />
           <entry key="UML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7189" />
+          <entry key="java" value="7773" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7189" />
+          <entry key="JAVA" value="7773" />
         </counts>
       </usages-collector>
     </session>
@@ -111,11 +111,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/回溯问题/Main01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="31" column="51" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="31" selection-end-column="51" />
+            <state relative-caret-position="322">
+              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DP问题/Main01.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -156,6 +165,7 @@
         <option value="$PROJECT_DIR$/src/字符串/Main05.java" />
         <option value="$PROJECT_DIR$/src/数学问题/Main04.java" />
         <option value="$PROJECT_DIR$/src/回溯问题/Main01.java" />
+        <option value="$PROJECT_DIR$/src/DP问题/Main01.java" />
       </list>
     </option>
   </component>
@@ -166,8 +176,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="630" />
-    <option name="y" value="22" />
+    <option name="x" value="917" />
+    <option name="y" value="1" />
     <option name="width" value="1055" />
     <option name="height" value="1040" />
   </component>
@@ -206,6 +216,12 @@
               <item name="每日一题" type="b2602c69:ProjectViewProjectNode" />
               <item name="每日一题" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="回溯问题" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="每日一题" type="b2602c69:ProjectViewProjectNode" />
+              <item name="每日一题" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="数学问题" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -219,7 +235,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573884212436" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573900397892" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
@@ -236,13 +252,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main04">
-    <configuration name="Main01 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="链表.Main01" />
+  <component name="RunManager" selected="Application.Main01">
+    <configuration name="Main01 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="最值.Main01" />
       <module name="每日一题" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="链表.*" />
+          <option name="PATTERN" value="最值.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -250,12 +266,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main01 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="最值.Main01" />
+    <configuration name="Main01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP问题.Main01" />
       <module name="每日一题" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="最值.*" />
+          <option name="PATTERN" value="DP问题.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -303,19 +319,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main01 (1)" />
       <item itemvalue="Application.Main01 (2)" />
       <item itemvalue="Application.Main03" />
       <item itemvalue="Application.Main05 (1)" />
       <item itemvalue="Application.Main04" />
+      <item itemvalue="Application.Main01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main01" />
         <item itemvalue="Application.Main04" />
         <item itemvalue="Application.Main05 (1)" />
         <item itemvalue="Application.Main03" />
         <item itemvalue="Application.Main01 (2)" />
-        <item itemvalue="Application.Main01 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -342,12 +358,12 @@
       <workItem from="1573726279652" duration="681000" />
       <workItem from="1573820279789" duration="2667000" />
       <workItem from="1573823093816" duration="3027000" />
-      <workItem from="1573878392540" duration="6362000" />
+      <workItem from="1573878392540" duration="9523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65086000" />
+    <option name="totallyTimeSpent" value="68247000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,7 +375,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="504" y="18" width="844" height="832" extended-state="0" />
+    <frame x="734" y="1" width="844" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49586776" weight="0.24045801" />
@@ -371,7 +387,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2296719" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2296719" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39800286" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -660,8 +676,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/回溯问题/Main01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="31" column="51" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="31" selection-end-column="51" />
+        <state relative-caret-position="322">
+          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DP问题/Main01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
         </state>
       </provider>
     </entry>

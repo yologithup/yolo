@@ -31,7 +31,7 @@ public class Main01 {
         }
         return countWays1(x-1,y)+countWays1(x,y-1);
     }
-    public int countWays2(int x, int y){
-
-    }
+//    public int countWays2(int x, int y){
+//
+//    }
 }
