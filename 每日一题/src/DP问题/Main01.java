@@ -11,6 +11,7 @@ public class Main01 {
         System.out.println(rec_opt1(arr,arr.length-1));
     }
 
+    //递归
     private static int rec_opt1(int[] arr,int i) {
         if(i==0){
             return arr[0];
