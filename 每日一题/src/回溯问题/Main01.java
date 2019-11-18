@@ -21,15 +21,23 @@ import java.util.*;
  * 方法二：动态规划
  */
 public class Main01 {
-    public int countWays1(int x, int y) {
-        // write code here
-        if(x==0||y==0){
-            return 0;
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        int m,n;
+        m = in.nextInt();
+        n = in.nextInt();
+        int f[][] = new int[11][11];
+        f[0][0] = 0;
+        for(int i=0; i<=m; i++)
+            f[i][0] = 1;
+        for(int i=0; i<=n; i++)
+            f[0][i] = 1;
+        for(int i=1; i<=m; i++){
+            for(int j=1; j<=n; j++)
+                f[i][j] = f[i-1][j] + f[i][j-1];
         }
-        if(x==1||y==1){
-            return 1;
-        }
-        return countWays1(x-1,y)+countWays1(x,y-1);
+        System.out.print(f[m][n]);
     }
 //    public int countWays2(int x, int y){
 //
