@@ -18,9 +18,9 @@
     <session id="1727550686">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.24" value="2" />
@@ -32,29 +32,29 @@
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Main01" value="1" />
-          <entry key="java" value="57" />
+          <entry key="java" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="57" />
+          <entry key="JAVA" value="59" />
           <entry key="UML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="11454" />
+          <entry key="java" value="12165" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11454" />
+          <entry key="JAVA" value="12165" />
         </counts>
       </usages-collector>
     </session>
@@ -85,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/二进制相关问题/Main01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="108">
               <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -97,20 +97,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/生活中的算法/Main06.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-336">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="108">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/数学问题/Main06.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/数学问题/Main06.java">
+        <entry file="file://$PROJECT_DIR$/src/数学问题/Main07.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="247">
+              <caret line="13" column="29" lean-forward="true" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/StringBuffer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="206" column="22" selection-start-line="206" selection-start-column="21" selection-end-line="206" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -161,6 +182,7 @@
         <option value="$PROJECT_DIR$/src/二进制相关问题/Main01.java" />
         <option value="$PROJECT_DIR$/src/生活中的算法/Main06.java" />
         <option value="$PROJECT_DIR$/src/数学问题/Main06.java" />
+        <option value="$PROJECT_DIR$/src/数学问题/Main07.java" />
       </list>
     </option>
   </component>
@@ -170,10 +192,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="808" />
-    <option name="width" value="1119" />
-    <option name="height" value="970" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="807" />
+    <option name="width" value="1120" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -193,49 +215,12 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="每日一题" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每日一题" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="每日一题" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每日一题" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="每日一题" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每日一题" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="回溯问题" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="每日一题" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每日一题" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="数学问题" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="每日一题" type="b2602c69:ProjectViewProjectNode" />
-              <item name="每日一题" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="生活中的算法" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574249724236" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574316114699" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
@@ -252,7 +237,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main06 (1)">
+  <component name="RunManager" selected="Application.Main07">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="每日一题" />
@@ -266,19 +251,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="回溯问题.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP问题.Main02" />
-      <module name="每日一题" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DP问题.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -325,21 +297,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="数学问题.Main07" />
+      <module name="每日一题" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="数学问题.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main01 (1)" />
-      <item itemvalue="Application.Main02" />
       <item itemvalue="Application.Main05" />
       <item itemvalue="Application.Main06" />
       <item itemvalue="Application.Main06 (1)" />
+      <item itemvalue="Application.Main07" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main07" />
         <item itemvalue="Application.Main06 (1)" />
         <item itemvalue="Application.Main06" />
         <item itemvalue="Application.Main01 (1)" />
         <item itemvalue="Application.Main05" />
-        <item itemvalue="Application.Main02" />
       </list>
     </recent_temporary>
   </component>
@@ -370,12 +355,13 @@
       <workItem from="1573971473107" duration="1547000" />
       <workItem from="1573975419326" duration="2697000" />
       <workItem from="1574052470973" duration="3388000" />
-      <workItem from="1574168391315" duration="7405000" />
+      <workItem from="1574168391315" duration="7412000" />
+      <workItem from="1574295719960" duration="4561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93550000" />
+    <option name="totallyTimeSpent" value="98118000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -387,7 +373,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="647" y="0" width="895" height="776" extended-state="0" />
+    <frame x="646" y="0" width="896" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49586776" weight="0.2437276" />
@@ -399,8 +385,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3782946" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39689922" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37716764" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39595374" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32868218" />
@@ -508,6 +494,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/数学问题/Main07.java</url>
+          <line>11</line>
+          <properties class="数学问题.Main07" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/数组/Main02.java</url>
@@ -783,7 +777,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/二进制相关问题/Main01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="108">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -793,15 +787,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/生活中的算法/Main06.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="108">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/数学问题/Main06.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/StringBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="206" column="22" selection-start-line="206" selection-start-column="21" selection-end-line="206" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数学问题/Main07.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="29" lean-forward="true" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
