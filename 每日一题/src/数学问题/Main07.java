@@ -1,7 +1,4 @@
 package 数学问题;
-
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
