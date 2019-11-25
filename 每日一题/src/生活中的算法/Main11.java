@@ -8,6 +8,6 @@ public class Main11 {
     public static void main(String[] args) {
         int sum1=10*30;
         long sum2=(long)Math.pow(2,30)-1;
-        System.out.println("%d,%d",sum1,sum2);
+        System.out.println(sum1+" "+sum2);
     }
 }
