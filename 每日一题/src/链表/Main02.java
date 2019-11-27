@@ -28,6 +28,6 @@ public class Main02 {
            pHead=temp;
        }
        small.next=largeHaed.next;
-       return smallHead;
+       return smallHead.next;
     }
 }
