@@ -34,5 +34,8 @@ package 基础知识;
  *
  */
 public class Demo01 {
+    public static void main(String[] args) {
+        
+    }
 
 }
