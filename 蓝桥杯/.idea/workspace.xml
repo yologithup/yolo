@@ -18,36 +18,36 @@
     <session id="-1307487850">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.24" value="3" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="23" />
+          <entry key="java" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="23" />
+          <entry key="JAVA" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2587" />
+          <entry key="java" value="4066" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2587" />
+          <entry key="JAVA" value="4066" />
         </counts>
       </usages-collector>
     </session>
@@ -57,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/入门练习/Main01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="33" column="30" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="594">
+              <caret line="33" column="30" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -76,16 +76,37 @@
         <entry file="file://$PROJECT_DIR$/src/入门练习/Main03.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/基础练习/Main01.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/基础练习/Main02.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="30" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/基础练习/Main01.java">
+        <entry file="file://$PROJECT_DIR$/src/基础练习/Main03.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" lean-forward="true" selection-start-line="2" selection-end-line="23" />
+            <state relative-caret-position="37">
+              <caret line="37" column="50" lean-forward="true" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,6 +145,8 @@
         <option value="$PROJECT_DIR$/src/入门练习/Main02.java" />
         <option value="$PROJECT_DIR$/src/入门练习/Main03.java" />
         <option value="$PROJECT_DIR$/src/基础练习/Main01.java" />
+        <option value="$PROJECT_DIR$/src/基础练习/Main02.java" />
+        <option value="$PROJECT_DIR$/src/基础练习/Main03.java" />
       </list>
     </option>
   </component>
@@ -133,46 +156,21 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="861" />
-    <option name="width" value="1078" />
-    <option name="height" value="970" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="886" />
+    <option name="width" value="1080" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="蓝桥杯" type="b2602c69:ProjectViewProjectNode" />
-              <item name="蓝桥杯" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="蓝桥杯" type="b2602c69:ProjectViewProjectNode" />
-              <item name="蓝桥杯" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="蓝桥杯" type="b2602c69:ProjectViewProjectNode" />
-              <item name="蓝桥杯" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="入门练习" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576310907709" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576388356089" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -192,33 +190,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main03">
-    <configuration name="Demo03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="校赛练习1.Demo03" />
-      <module name="蓝桥杯" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="校赛练习1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="校赛练习1.Demo04" />
-      <module name="蓝桥杯" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="校赛练习1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main03 (1)">
     <configuration name="Main01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="入门练习.Main01" />
       <module name="蓝桥杯" />
@@ -232,12 +204,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main02 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="基础练习.Main02" />
+      <module name="蓝桥杯" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="基础练习.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="入门练习.Main02" />
       <module name="蓝桥杯" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="入门练习.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main03 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="基础练习.Main03" />
+      <module name="蓝桥杯" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="基础练习.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -259,19 +257,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Demo03" />
-      <item itemvalue="Application.Demo04" />
       <item itemvalue="Application.Main01" />
       <item itemvalue="Application.Main02" />
       <item itemvalue="Application.Main03" />
+      <item itemvalue="Application.Main02 (1)" />
+      <item itemvalue="Application.Main03 (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main03 (1)" />
+        <item itemvalue="Application.Main02 (1)" />
         <item itemvalue="Application.Main03" />
         <item itemvalue="Application.Main02" />
         <item itemvalue="Application.Main01" />
-        <item itemvalue="Application.Demo04" />
-        <item itemvalue="Application.Demo03" />
       </list>
     </recent_temporary>
   </component>
@@ -292,12 +290,14 @@
       <workItem from="1573050448555" duration="623000" />
       <workItem from="1573110134305" duration="29000" />
       <workItem from="1575629227404" duration="12000" />
-      <workItem from="1576306168763" duration="4288000" />
+      <workItem from="1576306168763" duration="8930000" />
+      <workItem from="1576377939825" duration="3923000" />
+      <workItem from="1576382376378" duration="3081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25637000" />
+    <option name="totallyTimeSpent" value="37283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -309,7 +309,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="689" y="0" width="862" height="776" extended-state="0" />
+    <frame x="709" y="0" width="864" height="830" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25746268" />
@@ -321,8 +321,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2868217" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
+      <window_info anchor="bottom" id="Run" order="2" weight="1.0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3984496" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
@@ -358,6 +358,42 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/基础练习/Main02.java</url>
+          <line>10</line>
+          <properties class="基础练习.Main02" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/基础练习/Main03.java</url>
+          <line>11</line>
+          <properties class="基础练习.Main03" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/基础练习/Main03.java</url>
+          <line>21</line>
+          <properties class="基础练习.Main03" method="sixteenToTWO">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/基础练习/Main02.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/基础练习/Main03.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -427,30 +463,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/校赛练习1/Snacks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/校赛练习1/Demo05.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/校赛练习1/Snacks.java" />
+    <entry file="file://$PROJECT_DIR$/src/校赛练习1/Demo05.java" />
     <entry file="file://$PROJECT_DIR$/src/校赛练习1/Demo04.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -458,16 +476,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/入门练习/Main01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="30" />
+        <state relative-caret-position="594">
+          <caret line="33" column="30" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -481,14 +496,31 @@
     <entry file="file://$PROJECT_DIR$/src/入门练习/Main03.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/基础练习/Main01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" lean-forward="true" selection-start-line="2" selection-end-line="23" />
+        <state relative-caret-position="324">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/基础练习/Main02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="30" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/基础练习/Main03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="37" column="50" lean-forward="true" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
