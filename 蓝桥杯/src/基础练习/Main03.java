@@ -7,6 +7,7 @@ import java.util.Scanner;
 /**
  * @author yolo
  * @date 2019/12/15-11:05
+ * 十六进制转换八进制
  */
 public class Main03 {
     public static void main(String[] args) {
