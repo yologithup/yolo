@@ -20,7 +20,7 @@ public class Demo02 {
         listDir(file);
     }
 
-    public static void listDir(File dir) {
+    private static void listDir(File dir) {
         File[]files=dir.listFiles();//返回一个文件数组，表示由该抽象路径名表示的目录中的文件。
         for (File file : files) {//遍历文件数组
             if(file.isDirectory()){//判断数组中的每个元素是否为目录
