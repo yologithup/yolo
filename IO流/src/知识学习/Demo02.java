@@ -6,8 +6,12 @@ import java.io.File;
  * @author yolo
  * @date 2019/12/20-14:59
  * 遍历一个目录下的所有文件--相当于树的遍历
- * 栈对应深度--递归--栈
- *
+ * 分析：
+ *  类似于树的深度遍历
+ *  1.listFiles：返回一个数组，表示该路径名表示的目录中的文件
+ *  2.遍历数组，判断是否为文件
+ *      ①是文件直接打印
+ *      ②是目录，继续递归调用
  */
 public class Demo02 {
     public static void main(String[] args) {
