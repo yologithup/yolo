@@ -64,7 +64,7 @@ public class ArpPacket {
 
     @Override
     public String toString() {
-        return "ArpPacket [目标ip" + dst_ip + ", 目标网卡地址=" + dst_port + ", 本地ip=" + src_ip + ", 本地网卡地址="
-                + src_port + ", len=" + len + "]";
+        return ("ArpPacket [目标ip" + dst_ip + ", 目标网卡地址=" + dst_port + ", 本地ip=" + src_ip + ", 本地网卡地址="
+                + src_port + ", 长度len=" + len + "]");
     }
 }

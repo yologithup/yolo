@@ -69,8 +69,9 @@ public class UdpPacket {
 
     @Override
     public String toString() {
-        return "UdpPacket [目标ip" + dst_ip + ", 目标端口=" + dst_port + ", 本地ip=" + src_ip + ", 本地端口="
-                + src_port + ", len=" + len + "]";
+      return ( "UDP [目标ip" + dst_ip + ", 目标端口=" + dst_port + ", 本地ip=" + src_ip + ", 本地端口="
+                + src_port + ", 长度len=" + len + "]");
+
     }
 
 
