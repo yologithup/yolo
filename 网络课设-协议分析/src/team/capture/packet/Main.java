@@ -14,9 +14,10 @@ public class Main {
     static jpcap.NetworkInterface[] devices = JpcapCaptor.getDeviceList();
     static DataPacket dp = new DataPacket();
     static int captureCount = 0;// 记录捕捉的次数
-    static String path = null;
+    static String path = null;//文件的写入路径
 
     public static void main(String[] args) {
+
         if(devices.length==0){
             System.out.println("无网卡信息");
             return;
@@ -30,12 +31,11 @@ public class Main {
             System.out.println("\n");
         }
         // 返回机器上网络接口卡对象的数组
-
         int a = 0;
-        byte[] b = devices[1].mac_address; // 网卡物理地址
-        System.out.println("------------------本机网卡信息-----------------------");
+        byte[] b = devices[0].mac_address; // 网卡物理地址
+        System.out.println("----------------------所选接口详细信息-----------------------");
         System.out.println("网卡名称 : " + devices[1].name);
-        System.out.print("网卡地址:");
+        System.out.print("MAC地址:");//计算MAC地址
         for (int j = 0; j < b.length; j++) {
             /*
              * << : 左移运算符，num << 1,相当于num乘以2 >> : 右移运算符，num >> 1,相当于num除以2 >>>
@@ -169,67 +169,3 @@ public class Main {
         }
     }
 }
-
-//package team.capture.packet;
-//
-//import java.io.IOException;
-//import java.util.Scanner;
-//
-//import com.sun.corba.se.impl.orbutil.CorbaResourceUtil;
-//import jpcap.*;
-//import jpcap.packet.*;
-///**
-// * @author yolo
-// * @date 2019/12/23-20:45
-// */
-//public class Main {
-//    static JpcapCaptor jpcap = null;
-//    static jpcap.NetworkInterface[] devices = JpcapCaptor.getDeviceList();
-//    static DataPacket dp = new DataPacket();
-//    static int captureCount = 0;// 记录捕捉的次数
-//    static String path = null;
-//
-//    public static void main(String[] args) {
-//        if(devices.length==0){
-//            System.out.println("无网卡信息");
-//            return;
-//        }
-//        //输出网卡信息
-//        for (int i = 0; i < devices.length; i++) {
-//            System.out.println("网卡"+i+"  信息"+devices[i].name);
-//            for (NetworkInterfaceAddress address : devices[i].addresses) {
-//                System.out.print(address.address+" ");
-//            }
-//            System.out.println("\n");
-//        }
-//        startCapture();
-//    }
-//
-//    /*
-//     * 开始捕捉数据包
-//     */
-//    static void startCapture() {
-//        Scanner input=new Scanner(System.in);
-//        System.out.println("请选择你要监听的接口序号：");
-//        //Packet packet=jpcap.getPacket();
-//        int index=input.nextInt();
-//        NetworkInterface deviceName = devices[index];
-//
-//        /* 将网卡设为混杂模式下用网络设备deviceName */
-//
-//        try {
-//            jpcap = JpcapCaptor.openDevice(deviceName, 2000, false, 1);
-//            /*
-//             * 取得在指定网卡上的Jpcapcator对象， Interface：返回的某个网卡对象。 Snaplen：一次性要抓取数据包的最大长度。
-//             * 这个是比较容易搞混的一个参数。其实这个参数不是限制只能捕捉多少数据包，而是限制每一次收到一个数据包，只提取该数据包中前多少字节
-//             * Promisc：设置是否混杂模式。处于混杂模式将接收所有数据包，如果设置为混杂模式后调用了包过滤函数setFilter()将不起任何作用；
-//             * To_ms：这个参数主要用于processPacket()方法，指定超时的时间；
-//             */
-//
-//            jpcap.loopPacket(100, new DataPacket());
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-//}
