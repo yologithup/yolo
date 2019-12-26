@@ -105,7 +105,7 @@ public class IpPacket {
     @Override
     public String toString() {
        return ("IpPacket:[版本号:" + version + ", 总长度:" + len + ", 首部长度:" + length + ", 标识:"
-                + ident + ", 标志=" + r_flag +  "\n" +" 片偏移:" + offset + ", 协议:" + protocol + ", 源地址:" + src_ip
+                + ident + ", 标志=" + r_flag  +" 片偏移:" + offset + ", 协议:" + protocol + ", 源地址:" + src_ip
                 + ", 目标地址:" + dst_ip +  "]");
 
     }
