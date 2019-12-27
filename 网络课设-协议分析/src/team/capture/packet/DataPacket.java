@@ -58,9 +58,7 @@ public class DataPacket implements PacketReceiver {
         } else if (packet.getClass().equals(UDPPacket.class)) {
             count++;
             try {
-
                 UDPPacket udp = (UDPPacket) packet;
-
                 String dst_ip = String.valueOf(udp.dst_ip);
                 String dst_port = String.valueOf(udp.dst_port);
                 String src_ip = String.valueOf(udp.src_ip);

@@ -11,7 +11,7 @@ import jpcap.packet.*;
  */
 public class Main {
     static JpcapCaptor jpcap = null;
-    static jpcap.NetworkInterface[] devices = JpcapCaptor.getDeviceList();
+    static jpcap.NetworkInterface[] devices = JpcapCaptor.getDeviceList();//获取接口对象，存入数组
     static DataPacket dp = new DataPacket();
     static int captureCount = 0;// 记录捕捉的次数
     static String path = null;//文件的写入路径
@@ -36,15 +36,13 @@ public class Main {
         System.out.println("----------------------所选接口详细信息-----------------------");
         System.out.println("网卡名称 : " + devices[1].name);
         System.out.print("MAC地址:");//计算MAC地址
-        for (int j = 0; j < b.length; j++) {
-            /*
-             * << : 左移运算符，num << 1,相当于num乘以2 >> : 右移运算符，num >> 1,相当于num除以2 >>>
-             * :无符号右移，忽略符号位，空位都以0补齐
-             */
-            a = b[j];
-            a = a << 24;
-            a = a >>> 24;
-            System.out.print(Integer.toHexString(a));
+        int i=0;
+        for (byte mac_address : devices[0].mac_address) {
+            System.out.print(Integer.toHexString(Math.abs(mac_address)));
+            if(i<5){
+                System.out.print("-");
+            }
+            i++;
         }
         System.out.println();
 
@@ -89,7 +87,7 @@ public class Main {
         }
     }
 
-    static void capture() {
+    static void capture() {//选择要捕获数据包的类型
         captureCount++;//
         System.out.println("\n" + "请选择捕捉协议类型:");
         System.out.println("0:全部协议类型" + "\n" + "1. arp" + "\n" + "" + "2. ip " + "\n" + "3. udp" + "\n" + "4. 准备结束操作");
