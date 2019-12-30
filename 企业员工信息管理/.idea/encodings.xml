@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/WebRoot/admin" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/admin" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/chuqin" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/gongzi" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/index" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/index.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/left.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/org" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/qingjiashenqing" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/right.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/top.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/userinfo" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/yuangong" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/lib/commons-logging-1.1.3-javadoc.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/lib/commons-logging-1.1.3-sources.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/lib/commons-logging-1.1.3-test-sources.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/lib/commons-logging-1.1.3-tests.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/lib/commons-logging-1.1.3.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/lib/commons-logging-adapters-1.1.3.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/lib/commons-logging-api-1.1.3.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/lib/commons-logging-tests.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/lib/dwr.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/METAINF/MANIFEST.MF" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/action" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/dao" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/orm" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/service" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/util" charset="GBK" />
+  </component>
+</project>
