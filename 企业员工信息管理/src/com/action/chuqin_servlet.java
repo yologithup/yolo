@@ -19,7 +19,8 @@ import com.orm.TAdmin;
 import com.orm.Yuangong;
 import com.service.liuService;
 
-public class chuqin_servlet extends HttpServlet
+public class
+chuqin_servlet extends HttpServlet
 {
 	public void service(HttpServletRequest req,HttpServletResponse res)throws ServletException, IOException 
 	{

@@ -14,7 +14,7 @@ public class DB
 
 	private String user = "root";
 
-	private String password = "mmwan980815";
+	private String password = "123456";
 
 	private String className = "com.mysql.jdbc.Driver";
 

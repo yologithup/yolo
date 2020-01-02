@@ -14,13 +14,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.dao.DB;
 import com.orm.TOrganization;
-import com.service.loginService;
 import com.service.liuService;
 public class org_servlet extends HttpServlet
 {
 	public void service(HttpServletRequest req,HttpServletResponse res)throws ServletException, IOException 
 	{
-        String type=req.getParameter("type");
+        String type=req.getParameter("type");//根据name获取请求参数列表（常用）
 		
 		if(type.endsWith("orgMana"))
 		{
