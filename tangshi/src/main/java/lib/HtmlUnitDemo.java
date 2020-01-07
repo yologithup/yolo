@@ -22,7 +22,7 @@ public class HtmlUnitDemo {
 //        webClient.getOptions().setCssEnabled(false);
 //        HtmlPage page = webClient.getPage("https://so.gushiwen.org/gushi/tangshi.aspx");
 //        System.out.println(page);
-//        page.save(new File("唐诗三百首\\列表页.html"));
+//        page.save(new File("唐诗三百首\\PageDemo1.html"));
 
         //关闭界面的浏览器（HTTP客户端）
         //WebClient:用于从特定的URI中请求文件
@@ -33,7 +33,7 @@ public class HtmlUnitDemo {
         webClient.getOptions().setCssEnabled(false);
         HtmlPage page = webClient.getPage("https://so.gushiwen.org/gushi/tangshi.aspx");
         System.out.println(page);
-        File file=new File("唐诗三百首\\列表页.html");
+        File file=new File("唐诗三百首\\PageDemo1.html");
         file.delete();
         page.save(file);
 
