@@ -24,6 +24,7 @@ public class Main两数之和 {
             }
             map.put(nums[i],i);
         }
+        //注意
         throw new IllegalArgumentException("不存在两数之和等于目标值");
     }
 }
